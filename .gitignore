@@ -1,1 +1,7 @@
-Draft_1.auxDraft_1.fdb_latexmkDraft_1.flsDraft_1.logDraft_1.outDraft_1.synctex.gzDraft_1.thm
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.thm
