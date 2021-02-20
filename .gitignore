@@ -6,3 +6,4 @@
 *.synctex.gz
 *.thm
 *.DS_Store
+*/*.DS_Store
