@@ -12,11 +12,11 @@ ibre_path = '/Users/Valerie/Dropbox/Courses/CoursesSpring2020/ECON236B/236B_Fina
 all_path = '/Users/Valerie/Dropbox/Courses/CoursesSpring2020/ECON236B/236B_FinalPaper/CBA monetary policy and firms/data/clean/all/'
 figures_path = '/Users/Valerie/Dropbox/Courses/CoursesSpring2020/ECON236B/236B_FinalPaper/CBA monetary policy and firms/documents/Proof_of_Concept_VB/figures/'
 
-os.chdir(all_path)
-orbis = pd.read_csv(orbis_path+'orbis10_19.csv')
-orbis = orbis.iloc[:,1:orbis.shape[1]]
-rais_firms = pd.read_csv(agreements_path+\
-	'2013_2017_firmlevel_paneldecember.csv')
+	os.chdir(all_path)
+	orbis = pd.read_csv(orbis_path+'orbis10_19.csv')
+	orbis = orbis.iloc[:,1:orbis.shape[1]]
+	rais_firms = pd.read_csv(agreements_path+\
+		'2013_2017_firmlevel_paneldecember.csv')
 rais_firms = rais_firms.iloc[:,1:rais_firms.shape[1]]
 agreements = pd.read_stata(agreements_path+\
 	'acordos_infosecnpjmerged.dta')
