@@ -58,7 +58,7 @@ graph_df['rem_cba_mar16'] = graph_df.rem[graph_df.cba_mar16_y_n==1]
 graph_df['rem_cba_jan16'] = graph_df.rem[graph_df.cba_jan16_y_n==1]
 
 #=======================================================================================================================
-# Make average wage series for firms that had CBAs in Mar16, Jan16, and average of all firms.
+# Make average and median wage series for firms that had CBAs in Mar16, Jan16, and average of all firms.
 rem_cba_jan16_avg = graph_df[['monthly_date', 'rem_cba_jan16']].groupby('monthly_date').mean()
 rem_cba_jan16_avg = rem_cba_jan16_avg.reset_index()
 rem_cba_jan16_avg = rem_cba_jan16_avg.rename(columns={"rem_cba_jan16": "rem_cba_jan16_avg"})
@@ -79,16 +79,24 @@ rem_cba_mar16_med = rem_cba_mar16_med.reset_index()
 rem_cba_mar16_med = rem_cba_mar16_med.rename(columns={"rem_cba_mar16": "rem_cba_mar16_med"})
 rem_cba_mar16_med.monthly_date = pd.to_datetime(rem_cba_mar16_med.monthly_date, yearfirst='True', format = '%Y%m')
 
-fig1 = plt.figure(figsize = (7,5))
-plt.plot(rem_cba_mar16_avg.monthly_date, rem_cba_mar16_avg.rem_cba_mar16_avg, label = "Average Remuneration -- CBAs in Mar 2016")
-plt.plot(rem_cba_jan16_df.monthly_date, rem_cba_jan16_avg.rem_cba_jan16_avg, label = "Average Remuneration -- CBAs in Jan 2016")  
-plt.plot(rem_cba_mar16_med.monthly_date, rem_cba_mar16_med.rem_cba_mar16_med, label = "Median Remuneration -- CBAs in Mar 2016")
-plt.plot(rem_cba_jan16_df.monthly_date, rem_cba_jan16_med.rem_cba_jan16_med, label = "Median Remuneration -- CBAs in Jan 2016")  
-plt.legend()
 
-plt.savefig('avg_med_rem_2015_2017.png')
+med_rem = graph_df[['monthly_date', 'rem']].groupby('monthly_date').median()
+med_rem = med_rem.reset_index()
+med_rem.monthly_date = pd.to_datetime(med_rem.monthly_date, yearfirst='True', format = '%Y%m')
+
+fig1 = plt.figure(figsize = (10,7))
+plt.plot(rem_cba_mar16_avg.monthly_date, rem_cba_mar16_avg.rem_cba_mar16_avg, label = "Average -- CBAs in Mar 2016")
+plt.plot(rem_cba_jan16_avg.monthly_date, rem_cba_jan16_avg.rem_cba_jan16_avg, label = "Average -- CBAs in Jan 2016")  
+plt.plot(rem_cba_mar16_med.monthly_date, rem_cba_mar16_med.rem_cba_mar16_med, label = "Median -- CBAs in Mar 2016")
+plt.plot(rem_cba_jan16_med.monthly_date, rem_cba_jan16_med.rem_cba_jan16_med, label = "Median -- CBAs in Jan 2016")  
+plt.plot(med_rem.monthly_date, med_rem.rem, label = "Median -- All Firms in Sample" )
+plt.title("Monthly Remuneration 2015-2017")
+plt.legend()
+plt.savefig('/Users/Valerie/CBAs-Inflation-Git/tables-figures/avg_med_rem_2015_2017.png')
 plt.close()
 
+rem_cba_jan16_avg['rem_cba_jan16_growth'] = rem_cba_jan16_avg.rem_cba_jan16_avg.pct_change()
+rem_cba_mar16_avg['rem_cba_mar16_growth'] = rem_cba_mar16_avg.rem_cba_mar16_avg.pct_change()
 
 # want to plot demeaned wages from 201506 - 201606 for firms that had cbas in march vs those that had cbas in jan
 	
