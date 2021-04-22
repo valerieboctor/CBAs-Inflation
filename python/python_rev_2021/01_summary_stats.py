@@ -126,6 +126,7 @@ plt.plot(emp_cba_may16_med.monthly_date, emp_cba_may16_med.emp_cba_may16_med, la
 plt.plot(emp_cba_jan16_med.monthly_date, emp_cba_jan16_med.emp_cba_jan16_med, label = "Median -- CBAs in Jan 2016")  
 plt.plot(med_emp.monthly_date, med_emp.num_workers, label = "Median -- All Firms in Sample" )
 plt.title("Workers per Firm (Monthly) 2015-2017")
+plt.axvline(x = '2016-02', color = 'black', linestyle='-')
 plt.legend()
 plt.savefig('/Users/Valerie/CBAs-Inflation-Git/drafts/tables-figures/avg_med_emp_2015_2017.png')
 plt.clf()
@@ -139,6 +140,7 @@ plt.plot(rem_cba_jan16_med.monthly_date, rem_cba_jan16_med.rem_cba_jan16_med, la
 plt.plot(med_rem.monthly_date, med_rem.rem, label = "Median -- All Firms in Sample" )
 plt.title("Monthly Remuneration 2015-2017")
 plt.legend()
+plt.axvline(x = '2016-02', color = 'black', linestyle='-')
 plt.savefig('/Users/Valerie/CBAs-Inflation-Git/drafts/tables-figures/avg_med_rem_2015_2017.png')
 plt.clf()
 plt.close()
@@ -159,6 +161,7 @@ for i in range(0, len(plot_dfs)):
 	plot_dfs[i]['norm_'+plot_series[i]] = plot_dfs[i][plot_series[i]] / norm_factor
 	plt.plot(plot_dfs[i]['monthly_date'], plot_dfs[i]['norm_'+plot_series[i]], label = labels[i])
 plt.legend()
+plt.axvline(x = '2016-02', color = 'black', linestyle='-')
 plt.title("Normalized Monthly Remuneration 2015-2017")
 plt.savefig('/Users/Valerie/CBAs-Inflation-Git/drafts/tables-figures/normalized_avg_med_rem_2015_2017.png')
 plt.clf()
@@ -175,8 +178,9 @@ for i in range(0, len(plot_dfs)):
 	plot_dfs[i]['norm_'+plot_series[i]] = plot_dfs[i][plot_series[i]] / norm_factor
 	plt.plot(plot_dfs[i]['monthly_date'], plot_dfs[i]['norm_'+plot_series[i]], label = labels[i])
 plt.legend()
+plt.axvline(x = '2016-02', color = 'black', linestyle='-')
 plt.title("Normalized Number of Workers 2015-2017")
-plt.savefig('/Users/Valerie/CBAs-Inflation-Git/drafts/tables-figures/normalized_avg_emp_rem_2015_2017.png')
+plt.savefig('/Users/Valerie/CBAs-Inflation-Git/drafts/tables-figures/normalized_avg_med_emp_2015_2017.png')
 plt.clf()
 plt.close()	
 #==================================================================================================

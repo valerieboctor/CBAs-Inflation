@@ -12,52 +12,51 @@ Warning--no key, author in EnglishTranslationConsolidation2010
 Warning--no author, editor, or organization in EnglishTranslationConsolidation2010
 Warning--no key, author in EnglishTranslationConsolidation2010
 Warning--no author, editor, or organization in EnglishTranslationConsolidation2010
-Warning--empty year in fukuiTheoryWageRigidity
 Warning--no journal in fukuiTheoryWageRigidity
 Warning--no number and no volume in fukuiTheoryWageRigidity
 Warning--no journal in lagosLaborMarketInstitutions2021
 Warning--no number and no volume in lagosLaborMarketInstitutions2021
 Warning--no number and no volume in phillipsChargesBrazilianPresident2016
 Warning--page numbers missing in phillipsChargesBrazilianPresident2016
-You've used 14 entries,
+You've used 8 entries,
             2861 wiz_defined-function locations,
-            702 strings with 7660 characters,
-and the built_in function-call counts, 7581 in all, are:
-= -- 673
-> -- 359
-< -- 5
-+ -- 100
-- -- 138
-* -- 548
-:= -- 1380
-add.period$ -- 43
-call.type$ -- 14
-change.case$ -- 84
-chr.to.int$ -- 13
-cite$ -- 34
-duplicate$ -- 254
-empty$ -- 543
-format.name$ -- 142
-if$ -- 1390
-int.to.chr$ -- 2
+            659 strings with 6459 characters,
+and the built_in function-call counts, 3893 in all, are:
+= -- 334
+> -- 182
+< -- 2
++ -- 48
+- -- 70
+* -- 260
+:= -- 721
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 47
+chr.to.int$ -- 8
+cite$ -- 27
+duplicate$ -- 134
+empty$ -- 280
+format.name$ -- 70
+if$ -- 703
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 8
-newline$ -- 73
-num.names$ -- 128
-pop$ -- 64
+missing$ -- 3
+newline$ -- 43
+num.names$ -- 70
+pop$ -- 34
 preamble$ -- 1
-purify$ -- 166
+purify$ -- 95
 quote$ -- 0
-skip$ -- 260
+skip$ -- 148
 stack$ -- 0
-substring$ -- 441
-swap$ -- 93
-text.length$ -- 5
+substring$ -- 178
+swap$ -- 48
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 276
-warning$ -- 16
-while$ -- 141
+type$ -- 160
+warning$ -- 15
+while$ -- 72
 width$ -- 0
-write$ -- 187
-(There were 16 warnings)
+write$ -- 105
+(There were 15 warnings)

@@ -7,24 +7,6 @@
 \newblock
   https://web.archive.org/web/20101107030918/http://natlaw.com/interam/ar/lb/tn/tnarlb5.htm.
 
-\bibitem[\protect\citeauthoryear{Card}{Card}{1990a}]{cardStrikesBargainingSurvey1990}
-Card, D. (1990a).
-\newblock Strikes and {{Bargaining}}: {{A Survey}} of the {{Recent Empirical
-  Literature}}.
-\newblock {\em The American Economic Review\/}~{\em 80\/}(2), 410--415.
-
-\bibitem[\protect\citeauthoryear{Card}{Card}{1990b}]{cardUnexpectedInflationReal1990}
-Card, D. (1990b).
-\newblock Unexpected {{Inflation}}, {{Real Wages}}, and {{Employment
-  Determination}} in {{Union Contracts}}.
-\newblock {\em The American Economic Review\/}~{\em 80\/}(4), 669--688.
-
-\bibitem[\protect\citeauthoryear{Card}{Card}{1996}]{cardEffectUnionsStructure1996}
-Card, D. (1996).
-\newblock The {{Effect}} of {{Unions}} on the {{Structure}} of {{Wages}}: {{A
-  Longitudinal Analysis}}.
-\newblock {\em Econometrica\/}~{\em 64\/}(4), 957--979.
-
 \bibitem[\protect\citeauthoryear{Douglas}{Douglas}{2016}]{douglasReleaseTappedPhone2016}
 Douglas, B. (2016, March).
 \newblock Release of tapped phone calls between {{Lula}} and {{Rousseff}}
@@ -37,8 +19,8 @@ Dyer, G. (2015, August).
 \newblock Brazil's economy slips into recession.
 \newblock https://www.ft.com/content/53e87f68-4d93-11e5-9b5d-89a026fda5c9.
 
-\bibitem[\protect\citeauthoryear{Fukui}{Fukui}{}]{fukuiTheoryWageRigidity}
-Fukui, M.
+\bibitem[\protect\citeauthoryear{Fukui}{Fukui}{2020}]{fukuiTheoryWageRigidity}
+Fukui, M. (2020).
 \newblock A {{Theory}} of {{Wage Rigidity}} and {{Unemployment Fluctuations}}
   with {{On}}-the-{{Job Search}}.
 \newblock pp.\ ~86.
@@ -55,30 +37,11 @@ Leahy, J. (2017, September).
   Goldfajn}}.
 \newblock https://www.ft.com/content/b7cf9b3c-7eb6-11e7-ab01-a13271d1ee9c.
 
-\bibitem[\protect\citeauthoryear{Olivei and Tenreyro}{Olivei and
-  Tenreyro}{2007}]{oliveiTimingMonetaryPolicy2007}
-Olivei, G. and S.~Tenreyro (2007, June).
-\newblock The {{Timing}} of {{Monetary Policy Shocks}}.
-\newblock {\em American Economic Review\/}~{\em 97\/}(3), 636--663.
-
 \bibitem[\protect\citeauthoryear{Phillips}{Phillips}{2016}]{phillipsChargesBrazilianPresident2016}
 Phillips, D. (2016, May).
 \newblock The charges against {{Brazilian President Dilma Rousseff}},
   explained.
 \newblock {\em Washington Post\/}.
-
-\bibitem[\protect\citeauthoryear{Taylor}{Taylor}{1999}]{taylorChapter15Staggered1999}
-Taylor, J.~B. (1999, January).
-\newblock Chapter 15 {{Staggered}} price and wage setting in macroeconomics.
-\newblock In {\em Handbook of {{Macroeconomics}}}, Volume~1, pp.\  1009--1050.
-  {Elsevier}.
-
-\bibitem[\protect\citeauthoryear{Taylor}{Taylor}{2016}]{taylorStayingPowerStaggered2016}
-Taylor, J.~B. (2016, June).
-\newblock The {{Staying Power}} of {{Staggered Wage}} and {{Price Setting
-  Models}} in {{Macroeconomics}}.
-\newblock {{SSRN Scholarly Paper}} ID 2797950, {Social Science Research
-  Network}, {Rochester, NY}.
 
 \bibitem[\protect\citeauthoryear{Yuk}{Yuk}{2016}]{yukBrazilSlumpsWorst2016}
 Yuk, P.~K. (2016, March).
