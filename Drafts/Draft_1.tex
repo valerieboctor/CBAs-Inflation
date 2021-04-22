@@ -1,15 +1,17 @@
- \documentclass[12pt]{article}
+\documentclass[12pt]{article}
 \usepackage[capposition=top]{floatrow}
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{float}
+\usepackage{floatrow}
 \usepackage{eurosym}
 \usepackage{csvsimple}
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{hyperref}
+\usepackage{adjustbox}
 \usepackage{ulem}
 \usepackage{caption}
 \usepackage{tablefootnote}
@@ -17,19 +19,229 @@
 \usepackage{sectsty}
 \usepackage[justification=centering,textfont={sc},labelfont={rm}]{caption}
 \usepackage{geometry}
-\geometry{margin=.5in}
+\geometry{margin=1in}
 \usepackage[numbers, square]{natbib}
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage[section]{placeins}
 \onehalfspacing
 \begin{document}
 	\title{Bringing Expectations to the Collective Bargaining Table: Evidence from Brazilian Firms}
-	\author{Valerie R. Boctor \\ Roberto Hsu Rocha}
+	\author{Valerie R. Boctor\thanks{This project is a collaboration with Roberto Hsu Rocha. This document, including all tables and figures, was written by Valerie Boctor. All mistakes are my own. }}
 	\date{\today}
 	\maketitle
-	\abstract{\textit{Ideal: We use matched employer-employee data and firm-level inflation expectations to examine the role of inflationary news shocks on collective bargaining outcomes in Brazil. Our quasi-natural experiment comes from firm-level variation in the timing of collective bargaining agreements (CBAs) around inflationary news shock. That is, firms with CBAs just before an inflationary news shock may have wage and employment levels that differ systematically from firms whose CBAs fall just after the shock. For firms that settled contracts just before the shock, real wages were set too high, leading to reductions in employment and investment at the firm level. Furthermore, we adapt the Diamond-Mortensen-Pissarides model to include inflation expectations to demonstrate that the macroeconomic effects of collective bargaining channel of inflationary news shocks.}}
 
-
+% =================================================================================================
+% 												INTRODUCTION	
+% =================================================================================================
 	\section{Introduction}
-	\subsection{Literature Review}
-\end{document}
+		Using plausibly exogenous variation in the timing of collective bargaining agreements (CBAs) in Brazil, we analyze the effect of an inflationary news shock on firm-level wages and employment. The use of detailed micro data allows us to precisely measure labor market rigidities and the relative bargaining power of firms and workers. Furthermore, we assess the degree of wage rigidity for firms that negotiate just before and just after the inflationary news shock. This research may have important implications for both traditional and expectations-based monetary policy: In particular, we can inferences about the optimal timing of monetary policy using our precise measure of the time-varying degree of nominal wage rigidity. Additionally, this research may highlight the importance of the collective bargaining channel of expectations-based monetary policy.
+	
+		\subsection{The Inflationary News Shock}
+			 In 2015 Q2, a combination of falling global commodity prices, fiscal malfeasance, and corruption at the state-owned oil company Petrobras sank the Brazilian economy into its deepest recession in over 30 years \cite{yukBrazilSlumpsWorst2016}, \cite{dyerBrazilEconomySlips2015}. Already under fire for ``creative accounting'' on costly social programs during her first term, the newly reelected President Dilma Rousseff became further embroiled when news of her involvement with the Petrobras bribery scheme emerged, solidifying public accusations of vote buying practices, and eroding Brazil's financial capital. Despite having been reprimanded for deferring payment on social programs during her first term,  Dilma Rousseff continued to violate Brazil's budgetary rules, leaving the Bank of Brazil to finance roughly \$4bn without formally issuing a loan \cite{phillipsChargesBrazilianPresident2016}. This practice, known as ``fiscal pedaling'' led to a large increase in government debt and contributed directly to growing inflation rates throughout 2015. Against this backdrop, consumer and business confidence plummeted, reaching their lowest level in 2015 Q3 Figure \ref{fig:BusinessConfidence}, Figure \ref{fig:ConsumerConfidence}. GDP contracted by more than 7\% between 2015 and 2016, while inflation rose steadily from 6.45\% in January 2015 to a high of 9.8\% in June 2016 \cite{leahyCoolHeadCrisis2017}. Taken together, these trends constituted a period of stagflation, not unlike the U.S. experience in the 1970s.
+
+			In a reversal that hearkens back to the Volcker Disinflation, Dilma Rousseff's impeachment and subsequent replacement by Acting President Michael Temer led to significant changes in monetary policy that effectively curbed inflation and set the Brazilian economy on the path to recovery. Michel Temer appointed technocrat Ilan Goldfajn as the Brazilian Central Bank. Goldfajn's credible inflation targeting, interest rate cuts, and reassurance on improved fiscal responsibility helped to stabilize the economy and reduce inflation to under 3.5\% by the close of 2017.
+
+			 We use anticipation of the regime shift as an inflationary news shock. As shown in Figure \ref{fig:Inflation} below, inflation expectations peaked in February 2016 and decline sharply. We attribute the inflection point to a wave of public protests that erupted in March 2016: during that month, a leaked phone-call between Rousseff and her disgraced predecessor, former President Luiz Inácio de Silva, revealed her attempts to shield him from prosecution related to the Petrobras scandal. These protests represented a final push to impeach and a public signal that Rousseff's government would be overturned \cite{douglasReleaseTappedPhone2016}, Figure \ref{fig:Inflation}. It is important to note that speculation of Rousseff's impeachment and potential replacement by Michel Temer (and Ilan Goldfajn) began to appear in the news as early as December 2015, and this messaging was credible and consistent over time. Therefore, it is reasonable to assume the public equated Rousseff's removal from office with the advent of Temer and Goldfajn and an associated reduction in future inflation. 
+			 
+			\begin{figure}[!ht]
+			\centering
+			\includegraphics[scale = .5]{tables-figures/Realized_Inflation_and_Consumer_Expectations.png}
+			\caption{The inflationary news shock}
+			\label{fig:Inflation}
+			\floatfoot{Consumer inflation expectations peak in February 2016 and begin to decline thereafter. This timing corresponds to the March 2016, followed by Rousseff's impeachment in April, and suspension of powers in July of the same year.}
+			\end{figure}
+			
+			\begin{figure}[!ht]
+				\includegraphics[scale = .8]{old_figures/IBRE_Consumer_Expectations.png}
+				\caption{Consumer Confidence Index}
+				\floatfoot{Consumer confidence dropped precipitously during the political-economic crisis and began to recover as speculation of Rousseff's replacement by Temer's administration took root.}
+				\label{fig:ConsumerConfidence}
+			\end{figure}
+
+			\begin{figure}[!ht]
+				\includegraphics[scale = .85]{old_figures/IBRE_Firm_Expectations.png}
+				\caption{Business Confidence Index}
+				\label{fig:BusinessConfidence}
+				\floatfoot{Business confidence trends across all major sectors strong comovement with consumer confidence, shown in Figure \ref{fig:ConsumerConfidence}.}
+			\end{figure} 
+ 
+			\FloatBarrier
+		\subsection{Main Research Questions}
+		In this project, we are mainly interested in estimating the effects of inflationary news shocks on collective bargaining outcomes in Brazil and understanding macroeconomic implications of these effects. We summarize the main quesstions we will address below:  
+		\begin{enumerate}
+			\item How does the timing of CBAs affect the response of wages and employment to the inflationary news shock?
+
+			\item To what extent do firm-level wages exhibit nominal rigidities?
+
+			\item What are the implications of wage rigidities and employment behavior for optimal monetary policy?
+		\end{enumerate}
+% =================================================================================================
+% 												BACKGROUND	
+% =================================================================================================
+	\section{Background}
+	In this section, we discuss our intended contributions to the literature and provide key information about collective bargaining institutions in Brazil.
+		\subsection{Literature Review}
+		Olivei and Tenreyro (2007) posit that monetary policy shocks in the US have larger and less persistent effects during the first and second quarters than in the latter half of the year do to the timing of wage contract negotiations \cite{oliveiTimingMonetaryPolicy2007}. Because negotiations are more likely to occur in the first two quarters in the US, wages are more flexible during this period and respond more readily to monetary policy shocks. Since wages are less likely to be renegotiated during the third and fourth quarters, the response to monetary policy shocks during these periods tends to be smaller and more protracted. Our research builds on Olivei and Tenreyro's findings by measuring precisely the effect of an aggregate shock on firm-level wages, taking into account the relative timing of each firm's most recent CBA. If the reduction in nominal wages and/or employment is relatviely larger and less persistent for firms CBAs just after the news shock, then our results would corroborate Olivei and Tenreyo's aggregate findings.\footnote{See ``CBAs in Brazil'' for discussion of legally mandated downward nominal wage rigidity and workarounds.}
+
+		\begin{itemize}
+			\item Discuss David Card findings on unions and wage outcomes \cite{cardUnexpectedInflationReal1990}, \cite{cardEffectUnionsStructure1996}, \cite{cardStrikesBargainingSurvey1990}
+			\item Discuss relevance to literature on nominal rigidities and macro models \cite{taylorStayingPowerStaggered2016} \cite{taylorChapter15Staggered1999} \cite{fukuiTheoryWageRigidity}
+		\end{itemize}
+
+		\subsection{Collective Bargaining Agreements in Brazil}
+		In Brazil, collective bargaining agreements typically last 1 or 2 years. All CBA contracts have a maximum duration of 2 years, but can be extended for additional years. \cite{lagosLaborMarketInstitutions2021}. CBAs typically set a fixed nominal wage levels for the duration of the contract. It is important to note that nominal wages are legally required to be downward rigid. That is, nominal wages cannot be reduced unless the union approves the reduction first. Without an affirmation from the workers' union, if nominal wages fall, firms are legally required to offer workers additional hours. Conversely, a reduction in workers' hours must be compensated by a commensurate increase in the nominal wage rate. \cite{EnglishTranslationConsolidation2010}
+		Given the constraints facing firms, wages (measured in average monthly remuneration) may still be reduced through separations, or by reclassifying workers to occupations with lower nominal wage levels. 
+
+		In our context, a natural question that arises is whether the frequency and duration of CBAs may be endogenous to inflationary news shocks or changes in economic uncertainty. Below, we present evidence that the timing of CBAs is largely consistent over the entire sample.  
+	\begin{figure}[!ht]
+		\centering
+		\caption{CBA Hazard}
+		\label{fig:CBAHazard}	
+		\includegraphics[scale = .72]{tables-figures/cba_hazard.png}
+		\floatfoot{The hazard rate for both the pre- and post- shock groups peaks at 12 months.}
+		\end{figure}
+		Figure \ref{fig:CBAHazard} shows the CBA hazard rate for firms with CBAs before and after the March 2016 shock. For both groups, the hazard rate peaks at 12 months, which suggests that the duration of contracts does not shrink in response to possible uncertainty about future inflation. 
+
+		\begin{figure}[!ht]
+			\centering
+			\caption{Probability of CBA each period}
+			\label{fig:CBAProb}
+			\includegraphics[scale = .5]{tables-figures/cba_probability.png}
+			\floatfoot{For each year in the sample, the two most common months for CBAs to occur are January and May. We do not observe changes in the distribution during the 2015-2016 crisis.}
+		\end{figure}
+
+		Figure \ref{fig:CBAProb} shows the probability of having a CBA at each period in the sample. Note that the probability of having a CBA does not increase in 2015-2016. This graph suggests that CBAs do not become more frequent in response to news shocks or uncertainty about future inflation.
+		Combining information from Figure \ref{fig:CBAHazard} and Figure \ref{fig:CBAProb}, we conclude that the timing of CBAs is plausibly exogenous. 
+
+		Furthermore, we can rule out the possibility that the distribution of CBAs over time is driven by any particular industry. As Lagos (2021) points out, there is no bunching by certain industries around any particular month for CBAs \cite{lagosLaborMarketInstitutions2021}
+% =================================================================================================
+% 													DATA	
+% =================================================================================================
+	\section{Data}
+		\subsection{RAIS}
+		The Annual Social Information Report (RAIS) is an administrative dataset containing detailed information about workers and employers at the monthly frequency. The key variables of interest are monthly remuneration, employment status, 6-digit occupation codes (CBO), and 2-digit broad sector classifications from IBGE. We use average monthly remuneration by firm as the main wage variable throughout the study. We use the count of employed workers in a given month as the main employment variable of interest. 
+		\begin{figure}
+			\centering
+			\caption{INSERT RAIS SUM STATS}
+			\label{tab:SumStatsRAIS}
+		\end{figure}
+
+		\begin{figure}
+			\centering
+			\caption{INSERT RAIS RAW SAMPLE}
+			label{tab:RawDataRAIS}
+		\end{figure}
+
+		\subsection{Sistema Mediador}
+		Sistema Mediador is the Brazilian Ministry of Labor's online database of all CBAs. We use the subset of collective bargaining agreements that contain individual firm-worker agreements (acordos). This data is webscraped from the Sistema Mediador website. The key variables we use for this study the CBA start and end dates, and company names, which we use to link the CBA data with RAIS.
+		\begin{figure}
+			\centering
+			\caption{INSERT SM SUM STATS}
+			\label{tab:SumStatsRAIS}
+		\end{figure}
+
+		\begin{figure}
+			\centering
+			\caption{INSERT SM RAW SAMPLE}
+			label{tab:RawDataRAIS}
+		\end{figure} 
+		\subsection{FGV IBGE}
+		We use aggregate consumer inflation expectations fron the Getuglio Vargas Foundation (FGV). In the future, we may gain access to firm-specific expectations of their own prices and costs. This information would alllow us to estimate the relationship between expectations and wage adjustments more precisely.
+		\begin{figure}
+			\centering
+			\caption{INSERT FGV SUM STATS}
+			\label{tab:SumStatsRAIS}
+		\end{figure}
+
+		\begin{figure}
+			\centering
+			\caption{INSERT FGV RAW SAMPLE}
+			label{tab:RawDataRAIS}
+		\end{figure}
+
+% =================================================================================================
+% 											EMPIRICAL STRATEGY	
+% =================================================================================================
+	\section{Research Design}
+		\subsection{Reduced Form Model}
+		We use the March 16 protests and anticipation of Rousseff's impeachment as the inflationary news shock. We estimate the effects on wages over time for firms in the pre- and post- shock groups. We restrict our sample to the subset of firms with contracts of at least 12 months durations beginning either in January 2016 or May 2016. We use January and May 2016 as our pre- and post-shock dates, respectively for two reasons: 1.) Average inflation expectations differ substantially across these periods\footnote{See Figure \ref{fig:Inflation}}, and 2.) most CBAs in a given year occur during these months.\footnote{See Figure \ref{fig:CBAProb}} This allows us to take advantage of a substantial part of the variation in the data.
+	\begin{align}
+		\intertext{We write down the reduced form model for wages as:} \label{eqn:rem_DiD}
+		\log{w_{i,t}} & = \alpha_i + \delta_t + \sum_{t=\text{Jan 2015}, t\neq t^{\text{shock}}}^{\text{Dec 2017}} \beta_{t}D_{i,t} + \varepsilon_{i,t} 
+		\intertext{Similarly, the model for number of workers is:}  \label{eqn:emp_Did}
+		\log{n_{i,t}} & = \alpha_i + \delta_t + \sum_{t=\text{Jan 2015}, t\neq t^{\text{shock}}}^{\text{Dec 2017}} \beta_{t}D_{i,t} + \varepsilon_{i,t} 
+	\end{align} 
+
+	In this specification, $D_{i,t}$ is a dummy variable that equals 1 if firm $i$ is in the post-shock group and if the time period of the observation is equal to $t$. A negative estimate for $\beta_t$ would suggest that at time period t, the log wages for firms in the post-shock group fell by more than the pre-shock group. $\alpha_i$ is a firm-level fixed effect, and $\delta_t$ is a time fixed effect. 
+
+	If wages were perfectly flexible, our prediction, in line with Olivei and Tenreyro (2007), would be that the $\beta_t$s would be most negative just after the shock and attenuate to zero over time. However, given the presence of legally required downward nominal rigidity, firms are left with only indirect ways to reduce workers' monthly earnings. For example, monthly earnings would fall if firms separate from workers or reclassify them to occupations with lower implied wages. Note that simply reducing hours would not result in a reduction in monthly earnings, since the Brazilian Consolidation of Labor Laws (CLT) requires that hourly reductions be compensated with a commensurate increase in nominal wage rates.  Moreover, because we restrict our analysis to a balanced panel, nominal wage reductions cannot be explained by firm exit/entry.
+
+
+		\subsection{Preliminary Results}
+		\begin{figure}[!ht]
+			\centering
+			\caption{Monthly Earnings per Worker}
+			\label{fig:NormWages}
+			\includegraphics[scale = .65]{tables-figures/normalized_avg_med_rem_2015_2017.png}
+			\floatfoot{Each series is normalized by the values by December 2015 values. The sample is restricted to a balanced panel of firms between 2015 - 2017 with contracts beginning either in January or May 2016 and lasting at least 12 months.}
+		\end{figure}
+		One of the most striking features of this diagram is the sharp drop in all measures monthly nominal earnings in between December 2015 and January 2016. Surely, part of this drop is due to seasonality: Since bonuses are typically paid out in December, monthly earnings temporarily rise in December and fall back to the trend thereafter. (See November 2016 - January 2017 for comparison). However, the large drop in monthly earnings between December 2015 and January 2016 is salient because wages fall to levels far below the pre-trend levels. While the timing of the drop does not line up with our ``shock'' in March 2016, this graph demonstrates the magnitude of the recession vis-à-vis workers' earnings.  We discuss the difference in nominal wage growth between the pre- and post-shock groups in the regression results in Figure \ref{fig:RegressionResults}.
+
+		\begin{figure}[!ht]
+			\centering
+			\caption{Number of Workers}
+			\label{fig:NormEmp}
+			\includegraphics[scale = .65]{tables-figures/normalized_avg_med_emp_2015_2017.png}
+			\floatfoot{Each series is normalized by the values by December 2015 values. The sample is restricted to a balanced panel of firms between 2015 - 2017 with contracts beginning either in January or May 2016 and lasting at least 12 months.}
+		\end{figure}
+
+		In Figure \ref{fig:NormEmp}, we note that the average and median number of workers per firm is falling during the sample period. This graph provides preliminary evidence that part of the reduction in monthly earnings way be due to separations. 
+
+		Figure \ref{fig:RegressionResults} plots the $\beta_t$ estimates from equations \ref{eqn:emp_Did} and \ref{eqn:rem_DiD} above. Each point represents the difference in nominal wage growth between firms that negotiated just before the March 2016 shock ($t=0$) and just after. We restrict the sample to a balanced panel of firms between 2015 and 2016 whose contracts begin either in January 2016 or May 2016 and last at least 12 months.
+		\begin{figure}[!ht]
+			\centering
+			\caption{Response of Wages and Employment Given CBA Timing}
+			\includegraphics[scale = .49]{tables-figures/DiD_Plots_Weighted_Employment_Rem.png}
+			\label{fig:RegressionResults}
+			\floatfoot{Regression results from DiD estimation in equations \ref{eqn:emp_Did} and \ref{eqn:rem_DiD}. The results for the wage regressions use analytic weights based on the number of workers at firm $i$ in period $t$. }
+		\end{figure}
+		Contrary to our initial prediction, the DiD results suggest that firms that negotiated contracts just after disinflationary shock had higher nominal wage levels than their counterparts. Furthermore, this result is not accompanied by a relative reduction in the number of workers for the post-shock group. Instead, firms in the post-shock exhibit both relatively high nominal wages and employment levels, despite the fact that the real cost to group suggest that the difference in nominal wage growth is statistically indistinguishable from zero until January 2015 (t= -14), represented by the red dashed line on the graph. The coefficients begin to fluctuate after January 2015, as economic uncertainty mounted. The fluctuations become even more pronounced after March 2016 (t=0).
+
+
+	Tables \ref{tab:wage_reg} and \ref{tab:emp_reg} show several variants of the specifications displayed in Figure \ref{fig:RegressionResults}. 
+		\begin{figure}[!ht]
+				\caption{Log Wage Regressions}
+				\label{tab:wage_reg}
+				\tiny{\input{tables-figures/DiD_Rem_Results}}
+				\floatfoot{B/ NB = Balanced/ Unbalanced, W/ NW = Weighted/ Unweighted. \\ Weights are based on number of workers at firm $i$ in period $t$.}
+		\end{figure}
+
+		\begin{figure}[!ht]
+			\caption{Log Employment Regressions}
+			\label{tab:emp_reg}
+			\tiny{\input{tables-figures/DiD_Emp_Results}}
+			\floatfoot{B/ NB = Balanced/ Unbalanced}
+		\end{figure}
+
+% =================================================================================================
+% 													THEORY	
+% =================================================================================================
+	\section{Future Research}
+	Further analysis is required to pin down what factors are driving the reduction in nominal wages across all firms during the 2015-2016 recession. \ref{fig:NormWages} One possible explanation is that firms separate from workers during the recession, curtailing the workers' monthly earnings. There is some preliminary evidence of this in Figure \ref{fig:NormEmp}. Another potentially complementary explanation is that firms reclassify workers to occupations with lower implied nominal wages. While we have not yet carried out the analyses to corroborate whether the latter explanation is pertinent, we may have sufficient data to accomplish this in the near future.
+
+	Another salient question is why firms that negotiate wages just after the shock set higher nominal wages than firms negotiating just before. \ref{fig:RegressionResults} One possible explanation is that firms in the post-shock group have higher levels of optimism about the future state of the economy and their own future profit margins, which may lead them to set higher wage levels. We may gain access to microdata on firms' own-price and own-cost expectations that would allow us to study the link between individual firms' expectations and negotiated wages as well as hiring and firing decisions.  
+
+	Following Olivei and Tenreyo (2007), we may adapt a dynamic stochastic general equilibrium model with uneven staggering of wage contracts and downward rigidity. \cite{oliveiTimingMonetaryPolicy2007}
+
+	Another approach would be to adapt a DMP model to include inflation expectations, similar in spirit to Fukui (2020).  \cite{fukuiTheoryWageRigidity}
+
+
+% =================================================================================================
+% 												FUTURE RESEARCH	
+% =================================================================================================
+
+	\newpage
+	\bibliographystyle{chicago}
+	\bibliography{Bibliography-CBAs-Inflation}
+	\end{document}

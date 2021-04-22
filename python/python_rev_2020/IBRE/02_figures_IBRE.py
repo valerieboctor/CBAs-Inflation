@@ -6,13 +6,25 @@ import os
 from matplotlib import pyplot as plt
 from datetime import datetime, timedelta
 from collections import OrderedDict
+# Connection to FRED
+import os
+from fredapi import Fred
+
+os.environ['api_key'] = 'fd13f48c5556bfa5a8fb4e49e90876d3'
+key =os.getenv('api_key')
+fred = Fred(key)
+actual_inflation = fred.get_series('CPALTT01BRM659N')
+actual_inflation = actual_inflation.rolling(12).mean() #rolling average of 12 months ahead (monthly) inflation
+#actual_inflation = actual_inflation.pct_change(periods = 12)
+actual_inflation = actual_inflation.loc['2005-09-01':'2020-03-01']
 
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
 pd.set_option('display.float_format', lambda x: '%.2f' % x)
 
-figures_path = '/Users/Valerie/Dropbox/Courses/CoursesSpring2020/ECON236B/236B_FinalPaper/CBA monetary policy and firms/documents/Proof_of_Concept_VB/figures/'
-ibre_clean_path = '/Users/Valerie/Dropbox/Courses/CoursesSpring2020/ECON236B/236B_FinalPaper/CBA monetary policy and firms/data/clean/IBRE/'
+figures_path = '/Users/Valerie/CBAs-Inflation-Git/drafts/old_figures'
+new_figures_path = '/Users/Valerie/CBAs-Inflation-Git/drafts/tables-figures/'
+ibre_clean_path = '/Users/Valerie/Dropbox/Research/CBA monetary policy and firms/data/clean/IBRE/'
 os.chdir(ibre_clean_path)
 
 # ~~~~~~~~~~~~~~~~~~~~~~ Summary statistics ~~~~~~~~~~~~~~~~~~~~~
@@ -64,11 +76,21 @@ plt.xticks(np.arange(0, len(t), 7), rotation = 45)
 plt.title('Consumer Confidence')
 plt.savefig(figures_path+'IBRE_Consumer_Expectations.png')
 fig.clear()
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Consumer Inflation Expectations ~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Realized Inflation & Consumer Inflation Expectations ~~~~~~~~~~~~~~~~~~~~~~
 exp_inflation = np.array(df2.exp_inflation)
-fig3 = plt.figure(figsize = (8,5))
-exp_inflation_plot = plt.plot(t, exp_inflation, 'r', label = 'Expected Inflation')
-plt.xticks(np.arange(0, len(t), 7), rotation = 45)
-plt.title('Consumer Inflation Expectations')
-plt.savefig(figures_path+'IBRE_Consumer_Inflation_Expectations.png')
+max_exp_inflation = max(df2.exp_inflation)
+loc_max_exp = np.where(exp_inflation == max_exp_inflation)[0][0]
+preshock_position = 112
+postshock_position = 151
+inflation = np.array(actual_inflation)
+fig3 = plt.figure(figsize = (14,8))
+exp_inflation_plot = plt.plot(t, exp_inflation, 'r', label = 'Expected Inflation (12 months ahead forecast)')
+inflation_plot = plt.plot(t, inflation, 'b', label = 'Actual Inflation (12 months ahead rolling average)')
+plt.xticks(np.arange(0, len(t), 4), rotation = 45)
+plt.legend()
+plt.title('Realized Inflation and Consumer Expectations')
+plt.axvline(x = loc_max_exp, color = 'black', linestyle='-')
+plt.axvline(x = preshock_position, color = 'black', linestyle='--')
+plt.axvline(x = postshock_position, color = 'black', linestyle='--')
+plt.savefig(new_figures_path+'Realized_Inflation_and_Consumer_Expectations.png')
 plt.clf()

@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Draft_1.aux
+The style file: chicago.bst
+Database file #1: Bibliography-CBAs-Inflation.bib
+Warning--no key, author in EnglishTranslationConsolidation2010
+Warning--no author, editor, or organization in EnglishTranslationConsolidation2010
+Warning--to sort, need author or key in EnglishTranslationConsolidation2010
+Warning--no key, author in EnglishTranslationConsolidation2010
+Warning--no author, editor, or organization in EnglishTranslationConsolidation2010
+Warning--no key, author in EnglishTranslationConsolidation2010
+Warning--no author, editor, or organization in EnglishTranslationConsolidation2010
+Warning--no key, author in EnglishTranslationConsolidation2010
+Warning--no author, editor, or organization in EnglishTranslationConsolidation2010
+Warning--empty year in fukuiTheoryWageRigidity
+Warning--no journal in fukuiTheoryWageRigidity
+Warning--no number and no volume in fukuiTheoryWageRigidity
+Warning--no journal in lagosLaborMarketInstitutions2021
+Warning--no number and no volume in lagosLaborMarketInstitutions2021
+Warning--no number and no volume in phillipsChargesBrazilianPresident2016
+Warning--page numbers missing in phillipsChargesBrazilianPresident2016
+You've used 14 entries,
+            2861 wiz_defined-function locations,
+            702 strings with 7660 characters,
+and the built_in function-call counts, 7581 in all, are:
+= -- 673
+> -- 359
+< -- 5
++ -- 100
+- -- 138
+* -- 548
+:= -- 1380
+add.period$ -- 43
+call.type$ -- 14
+change.case$ -- 84
+chr.to.int$ -- 13
+cite$ -- 34
+duplicate$ -- 254
+empty$ -- 543
+format.name$ -- 142
+if$ -- 1390
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 73
+num.names$ -- 128
+pop$ -- 64
+preamble$ -- 1
+purify$ -- 166
+quote$ -- 0
+skip$ -- 260
+stack$ -- 0
+substring$ -- 441
+swap$ -- 93
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 276
+warning$ -- 16
+while$ -- 141
+width$ -- 0
+write$ -- 187
+(There were 16 warnings)
