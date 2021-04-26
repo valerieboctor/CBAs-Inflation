@@ -1,0 +1,216 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{byjellevisserTrendsCollectiveBargaining2017}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=97ed63b4c6b2017693f3c143d40673f7}{%
+           family={{by Jelle Visser}},
+           familyi={b\bibinitperiod},
+           given={Susan\bibnamedelimb Hayter\bibnamedelimb \& Rosina\bibnamedelima Gammarano},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim \~R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{97ed63b4c6b2017693f3c143d40673f7}
+      \strng{fullhash}{97ed63b4c6b2017693f3c143d40673f7}
+      \strng{bibnamehash}{97ed63b4c6b2017693f3c143d40673f7}
+      \strng{authorbibnamehash}{97ed63b4c6b2017693f3c143d40673f7}
+      \strng{authornamehash}{97ed63b4c6b2017693f3c143d40673f7}
+      \strng{authorfullhash}{97ed63b4c6b2017693f3c143d40673f7}
+      \field{sortinit}{b}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Collective bargaining over wages and other working conditions between unions and employers is a key labour market institution in democratic societies. The coverage and impact of this institution varies over time and across countries. This policy brief examines differences in collective bargaining coverage for 75 countries.}
+      \field{howpublished}{http://www.ilo.org/global/topics/collective-bargaining-labour-relations/publications/WCMS\_409422/lang--en/index.htm}
+      \field{month}{11}
+      \field{shorttitle}{Trends in Collective Bargaining Coverage}
+      \field{title}{Trends in Collective Bargaining Coverage: Stability, Erosion or Decline?}
+      \field{type}{Fact Sheet}
+      \field{year}{2017}
+      \verb{file}
+      \verb /Users/Valerie/Zotero/storage/Y65U7PXD/index.html
+      \endverb
+    \endentry
+    \entry{cardUnexpectedInflationReal1990}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a9e88233ec6ce30d2d31e294961e3e76}{%
+           family={Card},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{a9e88233ec6ce30d2d31e294961e3e76}
+      \strng{fullhash}{a9e88233ec6ce30d2d31e294961e3e76}
+      \strng{bibnamehash}{a9e88233ec6ce30d2d31e294961e3e76}
+      \strng{authorbibnamehash}{a9e88233ec6ce30d2d31e294961e3e76}
+      \strng{authornamehash}{a9e88233ec6ce30d2d31e294961e3e76}
+      \strng{authorfullhash}{a9e88233ec6ce30d2d31e294961e3e76}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper examines the effect of nominal contracting provisions on employment determination in union contracts. In most contracts the nominal wage rate is wholly or partially predetermined. Real wage rates therefore contain unanticipated components that reflect unexpected price changes and the degree of indexation. The empirical analysis, based on a large sample of indexed and nonindexed contracts, suggests that unexpected real wage changes are associated with systematic employment responses in the opposite direction. I conclude that nominal contracting provisions play a potentially important role in the cyclical properties and persistence of employment movements in the union sector.}
+      \field{issn}{0002-8282}
+      \field{journaltitle}{The American Economic Review}
+      \field{number}{4}
+      \field{title}{Unexpected {{Inflation}}, {{Real Wages}}, and {{Employment Determination}} in {{Union Contracts}}}
+      \field{volume}{80}
+      \field{year}{1990}
+      \field{pages}{669\bibrangedash 688}
+      \range{pages}{20}
+    \endentry
+    \entry{lagosLaborMarketInstitutions2021}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1f63ec9bde003b3bcdc966e16c39edf8}{%
+           family={Lagos},
+           familyi={L\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1f63ec9bde003b3bcdc966e16c39edf8}
+      \strng{fullhash}{1f63ec9bde003b3bcdc966e16c39edf8}
+      \strng{bibnamehash}{1f63ec9bde003b3bcdc966e16c39edf8}
+      \strng{authorbibnamehash}{1f63ec9bde003b3bcdc966e16c39edf8}
+      \strng{authornamehash}{1f63ec9bde003b3bcdc966e16c39edf8}
+      \strng{authorfullhash}{1f63ec9bde003b3bcdc966e16c39edf8}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper studies how collective bargaining—a widespread labor market institution—affects firm compensation, i.e., the wages and job characteristics that are valuable to workers (henceforth amenities). Specifically, I leverage a reform that automatically extended all existing collective bargaining agreements (CBAs) in Brazil to analyze the impact of restricting employers' ability to phase out negotiated benefits on both wages and amenities. To quantify the value workers place on amenities secured by unions, I measure how textual elements in CBAs influence an establishment's ability to poach workers from other employers, conditional on wages, using data on the universe of CBAs merged with an administrative linked employer-employee dataset. The causal effects of the reform are estimated using a matched difference-in-difference design comparing establishments with extended CBAs to establishment belonging to firms that do not negotiate directly with unions. I find that automatic extensions increase compensation by 1.6-3.8\% in establishments with strong unions, which is driven by additional amenities whose value more than offsets foregone wage gains. These changes in firm compensation lead to an increase in hiring concentrated among low-skill workers, implying an elasticity of labor supply to establishments with strong unions of around 2. Further evidence indicates that the resulting wage and amenity distributions are compressed, suggesting that unions reduce compensation inequality within establishments.}
+      \field{title}{Labor {{Market Institutions}} and the {{Composition}} of {{Firm Compensation}}:}
+      \field{year}{2021}
+      \field{pages}{96}
+      \range{pages}{1}
+      \verb{file}
+      \verb /Users/Valerie/Zotero/storage/FHV3LKKU/Lagos - Labor Market Institutions and the Composition of F.pdf
+      \endverb
+    \endentry
+    \entry{oliveiTimingMonetaryPolicy2007}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=fd308637a4adcc407fb18bfcae4d592b}{%
+           family={Olivei},
+           familyi={O\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=476ad06d8906e302627f01a0af0a60aa}{%
+           family={Tenreyro},
+           familyi={T\bibinitperiod},
+           given={Silvana},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{726b532e4e81cddd6daca0111f9f4d88}
+      \strng{fullhash}{726b532e4e81cddd6daca0111f9f4d88}
+      \strng{bibnamehash}{726b532e4e81cddd6daca0111f9f4d88}
+      \strng{authorbibnamehash}{726b532e4e81cddd6daca0111f9f4d88}
+      \strng{authornamehash}{726b532e4e81cddd6daca0111f9f4d88}
+      \strng{authorfullhash}{726b532e4e81cddd6daca0111f9f4d88}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A vast empirical literature has documented delayed and persistent effects of monetary policy shocks on output. We show that this finding results from the aggregation of output impulse responses that differ sharply depending on the timing of the shock. When the monetary policy shock takes place in the first two quarters of the year, the response of output is quick, sizable, and dies out at a relatively fast pace. In contrast, output responds very little when the shock takes place in the third or fourth quarter. We propose a potential explanation for the differential responses based on uneven staggering of wage contracts across quarters. Using a dynamic general equilibrium model, we show that a realistic amount of uneven staggering can generate differences in output responses quantitatively similar to those found in the data. (JEL E23, E24, E58, J41)}
+      \field{issn}{0002-8282}
+      \field{journaltitle}{American Economic Review}
+      \field{month}{6}
+      \field{number}{3}
+      \field{title}{The {{Timing}} of {{Monetary Policy Shocks}}}
+      \field{volume}{97}
+      \field{year}{2007}
+      \field{pages}{636\bibrangedash 663}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1257/aer.97.3.636
+      \endverb
+      \verb{file}
+      \verb /Users/Valerie/Zotero/storage/TBH6WJUI/Olivei and Tenreyro - 2007 - The Timing of Monetary Policy Shocks.pdf;/Users/Valerie/Zotero/storage/QLHCQTHC/articles.html
+      \endverb
+      \keyw{Aggregate Human Capital; Central Banks and Their Policies; Labor Contracts,Intergenerational Income Distribution,Macroeconomics: Production; Employment,Unemployment,Wages}
+    \endentry
+    \entry{taylorStayingPowerStaggered2016}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=e3dff114993f65bbf7693ec3251eab42}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={John\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Social Science Research Network}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{e3dff114993f65bbf7693ec3251eab42}
+      \strng{fullhash}{e3dff114993f65bbf7693ec3251eab42}
+      \strng{bibnamehash}{e3dff114993f65bbf7693ec3251eab42}
+      \strng{authorbibnamehash}{e3dff114993f65bbf7693ec3251eab42}
+      \strng{authornamehash}{e3dff114993f65bbf7693ec3251eab42}
+      \strng{authorfullhash}{e3dff114993f65bbf7693ec3251eab42}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{After many years, many critiques, and many variations, the staggered wage and price setting model is still the most common method of incorporating nominal rigidities into empirical macroeconomic models used for policy analysis. The aim of this chapter is to examine and reassess the staggered wage and price setting model. The chapter updates and expands on my chapter in the 1999 Handbook of Macroeconomics which reviewed key papers that had already spawned a vast literature. It is meant to be both a survey and user-friendly exposition organized around a simple ``canonical'' model. It provides a guide to the recent explosion of microeconomic empirical research on wage and price setting, examines central controversies, and reassesses from a longer perspective the advantages and disadvantages of the model as it has been applied in practice. An important question for future research is whether staggered price and wage setting will continue to be the model of choice or whether it needs to be replaced by a new paradigm.}
+      \field{month}{6}
+      \field{number}{ID 2797950}
+      \field{title}{The {{Staying Power}} of {{Staggered Wage}} and {{Price Setting Models}} in {{Macroeconomics}}}
+      \field{type}{{{SSRN Scholarly Paper}}}
+      \field{year}{2016}
+      \verb{file}
+      \verb /Users/Valerie/Zotero/storage/Y3PLI8B2/papers.html
+      \endverb
+      \keyw{John B. Taylor,SSRN,The Staying Power of Staggered Wage and Price Setting Models in Macroeconomics}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

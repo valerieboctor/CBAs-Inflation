@@ -1,0 +1,15 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'QE_Slides_April_2021.blg'
+[59] biber-darwin:315> INFO - === Sun Apr 25, 2021, 23:22:30
+[94] Biber.pm:371> INFO - Reading 'QE_Slides_April_2021.bcf'
+[221] Biber.pm:889> INFO - Found 5 citekeys in bib section 0
+[241] Biber.pm:4093> INFO - Processing section 0
+[255] Biber.pm:4254> INFO - Looking for bibtex format file 'Bibliography-CBAs-Inflation.bib' for section 0
+[259] bibtex.pm:1523> INFO - LaTeX decoding ...
+[332] bibtex.pm:1340> INFO - Found BibTeX data source 'Bibliography-CBAs-Inflation.bib'
+[383] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[383] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[383] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[384] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[393] bbl.pm:636> INFO - Writing 'QE_Slides_April_2021.bbl' with encoding 'UTF-8'
+[398] bbl.pm:739> INFO - Output to QE_Slides_April_2021.bbl
